@@ -25,7 +25,7 @@ public class AFragment extends Fragment {
 
         // Go to Fragment B
         binding.buttonGitA.setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_homePageFragment_to_XFragment);
+            Navigation.findNavController(view).navigate(R.id.action_AFragment_to_BFragment);
         });
 
         return binding.getRoot();

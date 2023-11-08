@@ -28,8 +28,7 @@
         <action
             android:id="@+id/action_AFragment_to_BFragment"
             app:destination="@id/BFragment"
-            app:popUpTo="@id/AFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/AFragment" />
     </fragment>
     <fragment
         android:id="@+id/BFragment"
@@ -38,7 +37,9 @@
         tools:layout="@layout/fragment_b" >
         <action
             android:id="@+id/action_BFragment_to_YFragment"
-            app:destination="@id/YFragment" />
+            app:destination="@id/YFragment"
+            app:popUpTo="@id/BFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/XFragment"

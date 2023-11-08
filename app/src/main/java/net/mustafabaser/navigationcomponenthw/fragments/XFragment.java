@@ -24,7 +24,7 @@ public class XFragment extends Fragment {
 
         // Go to Fragment Y
         binding.buttonGitY.setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_homePageFragment_to_XFragment);
+            Navigation.findNavController(view).navigate(R.id.action_XFragment_to_YFragment);
         });
 
         return binding.getRoot();
