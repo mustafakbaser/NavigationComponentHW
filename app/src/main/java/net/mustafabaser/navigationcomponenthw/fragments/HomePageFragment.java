@@ -3,6 +3,7 @@ package net.mustafabaser.navigationcomponenthw.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -21,13 +22,13 @@ public class HomePageFragment extends Fragment {
         binding = FragmentHomePageBinding.inflate(inflater, container, false);
 
         // Go to Fragment A
-        binding.buttonGitA.setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_homePageFragment_to_AFragment);
+        binding.buttonGitA.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_homePageFragment_to_AFragment);
         });
 
         // Go to Fragment X
-        binding.buttonGitX.setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_homePageFragment_to_XFragment);
+        binding.buttonGitX.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_homePageFragment_to_XFragment);
         });
 
         return binding.getRoot();

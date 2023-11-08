@@ -11,10 +11,14 @@
         tools:layout="@layout/fragment_home_page" >
         <action
             android:id="@+id/action_homePageFragment_to_XFragment"
-            app:destination="@id/XFragment" />
+            app:destination="@id/XFragment"
+            app:popUpTo="@id/homePageFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_homePageFragment_to_AFragment"
-            app:destination="@id/AFragment" />
+            app:destination="@id/AFragment"
+            app:popUpTo="@id/homePageFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/AFragment"
@@ -23,7 +27,9 @@
         tools:layout="@layout/fragment_a" >
         <action
             android:id="@+id/action_AFragment_to_BFragment"
-            app:destination="@id/BFragment" />
+            app:destination="@id/BFragment"
+            app:popUpTo="@id/AFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/BFragment"
@@ -41,7 +47,9 @@
         tools:layout="@layout/fragment_x" >
         <action
             android:id="@+id/action_XFragment_to_YFragment"
-            app:destination="@id/YFragment" />
+            app:destination="@id/YFragment"
+            app:popUpTo="@id/XFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/YFragment"
